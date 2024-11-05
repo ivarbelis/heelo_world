@@ -28,10 +28,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-      working-directory: './heelo-world'
+      working-directory: './heelo_world'
     - run: npm run build --if-present
-      working-directory: './heelo-world'
+      working-directory: './heelo_world'
     - run: npm test
-      working-directory: './heelo-world'
+      working-directory: './heelo_world'
     - run: echo "TEST"
-      working-directory: './heelo-world'
+      working-directory: './heelo_world'
